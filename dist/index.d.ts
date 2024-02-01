@@ -1,8 +1,8 @@
 import { InputHTMLAttributes } from 'react';
 
-interface OwnProps extends InputHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement> {
     label: string;
 }
-declare const ButtonWrapper: (props: OwnProps) => JSX.Element;
+declare const Button: (props: ButtonProps) => JSX.Element;
 
-export { ButtonWrapper as Button };
+export { Button };

@@ -2800,9 +2800,9 @@ function requireReact_development () {
 
 var React = /*@__PURE__*/getDefaultExportFromCjs(react.exports);
 
-const ButtonWrapper = (props) => {
+const Button = (props) => {
     return (React.createElement("div", null,
-        React.createElement("button", null, props.label)));
+        React.createElement("button", { className: "bg-re" }, props.label)));
 };
 
-export { ButtonWrapper as Button };
+export { Button };
