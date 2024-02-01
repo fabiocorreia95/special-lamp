@@ -1,22 +1,20 @@
 import React from 'react';
-import {StoryFn, StoryObj} from '@storybook/react';
-import Button from './Button';
-
-// You can learn about this: https://storybook.js.org/docs/react/writing-stories/introduction
+import { Meta, StoryFn } from '@storybook/react';
+import { Button, ButtonProps } from './Button';
 
 export default {
-    title: 'Button',
+    title: 'Components/Button',
     component: Button,
-} as StoryObj<typeof Button>;
+} as Meta;
 
-const Template: StoryFn<typeof Button> = (args) => <Button {...args} />
+const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    label: "Primary"
-}
+    label: 'NASDAQ',
+};
 
-export const Secondary = Template.bind({})
+export const Secondary = Template.bind({});
 Secondary.args = {
-    label: "Secondary"
-}
+    label: 'NASDAQsss',
+};

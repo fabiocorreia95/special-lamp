@@ -1,2 +1,1 @@
-// @ts-ignore
-export * from 'components';
+export { Button } from './components/Button/Button';
