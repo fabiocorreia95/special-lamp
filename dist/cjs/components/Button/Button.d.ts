@@ -1,5 +1,6 @@
-import { InputHTMLAttributes } from 'react';
-export interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement> {
+/// <reference types="react" />
+export interface ButtonProps {
     label: string;
 }
-export declare const Button: (props: ButtonProps) => JSX.Element;
+declare const Button: ({ label }: ButtonProps) => JSX.Element;
+export default Button;

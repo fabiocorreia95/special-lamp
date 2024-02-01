@@ -2804,9 +2804,9 @@ function requireReact_development () {
 
 var React = /*@__PURE__*/getDefaultExportFromCjs(react.exports);
 
-const Button = (props) => {
-    return (React.createElement("div", null,
-        React.createElement("button", { className: "bg-amber-700 p-2 rounded" }, props.label)));
+const Button = ({ label }) => {
+    // btn class added 👇👇
+    return React.createElement("button", { className: "bg-amber-700 p-2 rounded" }, label);
 };
 
 exports.Button = Button;
