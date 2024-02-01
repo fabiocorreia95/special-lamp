@@ -1,13 +1,12 @@
-import React, { InputHTMLAttributes } from 'react';
+import React from 'react';
 
-export interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement> {
-  label: string;
+export interface ButtonProps{
+    label: string;
 }
 
-export const Button = (props: ButtonProps) => {
-  return (
-    <div>
-      <button className="bg-amber-700 p-2 rounded">{props.label}</button>
-    </div>
-  );
-};
+const Button = ({label}: ButtonProps) => {
+    // btn class added 👇👇
+    return <button className="bg-amber-700 p-2 rounded">{label}</button>
+}
+
+export default Button;
