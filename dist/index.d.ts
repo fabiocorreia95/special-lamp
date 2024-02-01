@@ -5,4 +5,4 @@ interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement> {
 }
 declare const Button: (props: ButtonProps) => JSX.Element;
 
-export { Button };
+export { Button, ButtonProps };

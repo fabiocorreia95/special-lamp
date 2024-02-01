@@ -2806,7 +2806,7 @@ var React = /*@__PURE__*/getDefaultExportFromCjs(react.exports);
 
 const Button = (props) => {
     return (React.createElement("div", null,
-        React.createElement("button", { className: "bg-re" }, props.label)));
+        React.createElement("button", { className: "bg-amber-700 p-2 rounded" }, props.label)));
 };
 
 exports.Button = Button;
